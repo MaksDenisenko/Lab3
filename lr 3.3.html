@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h1>Проверка возраста</h1>
+</head>
+<body>
+	<script>
+		var year;
+		while (true){
+			year = prompt('Сколько вам лет?', '');
+
+			if (year != null)
+            {
+				if (confirm('Вам точно ' + year + ' лет?'))
+                {
+					break;
+				}
+			}
+            else 
+            {
+				alert('Пожалуйста, введите ваш возраст.');
+			}
+		}
+		alert("Спасибо, что уделили время");
+	</script>
+</body>
+</html>
